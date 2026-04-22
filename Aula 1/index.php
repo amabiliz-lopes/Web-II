@@ -18,7 +18,14 @@
         -->
 
         <?php
-            echo 'Boa noite pessoas!'
+            $a = 'Boa noite';
+            $b = ' galera!';
+            echo '<p>' . $a . $b . '</p>'; 
+
+            $c = 10;
+            $d = 35;
+            $e = $c + $d;
+            echo "<p>$e</p>";
         ?>
 
         <div id = "box" style = "width: 200px;height: 100px;padding: 16 px;border: 1px groove #104086;">Move mouse over this box!</div>
@@ -30,7 +37,7 @@
                 box.innerHTML = "Mouse is over me";
                 box.style.backgroundColor  = "cyan";
             })  
-
+ 
             //Let box listen for mouseout
             box.addEventListener("mouseout", function(){
                 box.innerHTML = "Mouse is out!"
